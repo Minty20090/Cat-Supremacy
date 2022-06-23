@@ -1,0 +1,35 @@
+div.form {
+    margin: 10px;
+}
+h1 {
+    font-family: 'Raleway';
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+p {
+    font-family: 'Raleway';
+    text-align: center;
+}
+label {
+    font-size: 1em;
+    font-family: 'Courier New';
+    margin-bottom: 100px;
+}
+input, textarea {
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    font-family: 'Raleway';
+}
+
+::placeholder {
+    font-family: 'Raleway';
+}
+
+input#submitbutton {
+    background-color: rgb(255 225 173);
+    border: none;
+}

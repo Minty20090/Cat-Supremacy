@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.backsplash h1{
+    padding: 3% 0;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    font-family: 'Bungee';
+}
+
+/* Fonts */
+@font-face {
+    font-family: Bungee;
+    src: url(BungeeShade-Regular.ttf);
+}
+
+.centered {
+    text-align: center;
+}
+
+footer {
+    font-family: 'Raleway';
+    background-color: orange;
+    height: 30px;
+    vertical-align: center;
+}
+
+/* Navigation Styles */
+
+nav{
+    background-color: orange;
+    font-family: 'Raleway';
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+nav a:hover {
+    text-shadow: white 2px 2px 2px;
+}
+nav a:visited {
+    color: black;
+}
+nav a:unvisited {
+    color: black;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+@media (max-width: 500px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a{
+        padding: 10px;
+    }
+}
+
+

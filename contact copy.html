@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="contact.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    
+        <title>Contact Us! | Cat Supremacy</title>
+    </head>
+    
+    <!-- Base -->
+    <div class="backsplash">
+        <h1>Cat Supremacy</h1>
+    </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Form -->
+    <body>
+        <div class="form">
+            <h1>Send us your cute cat photos!</h1>
+            <p>We'd love to hear from you! Make sure to send pictures of your own furry companions &#128513;</p>
+        </div>
+        <form action="action_page.php" method="post">
+            <div class="form">
+                <label for="name">Name:<br></label>
+                <input type="text" name="sender" id="name" placeholder="First Last (ex. John Doe)" required>
+            </div>
+            <div class="form">
+                <label for="gmail">Email:<br></label>
+                <input type="email" name="address" id="gmail" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form">
+                <label for="message">Message:<br></label>
+                <textarea name="response" id="message" placeholder="Enter message here!"></textarea>
+            </div>
+            <div class="form">
+                <label for="catpic">Attach Image:<br></label>
+                <input type="file" name="picture" id="catpic" accept="image/*">
+            </div>
+            <div class="form">
+                <input type="submit" value="Send Message" id="submitbutton">
+            </div>
+        </form>
+    </body>
+</html>

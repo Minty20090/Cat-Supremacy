@@ -1,0 +1,130 @@
+section {
+    background-color: rgb(255, 232, 190);
+}
+/* Styling the area of the slides */
+@media (min-width: 728px) {
+    #slideshow {
+        overflow: hidden;
+        height: 700px;
+        width: 728px;
+        margin: 0 auto;
+      
+      }
+       
+      /* Style each of the sides
+      with a fixed width and height */
+      .slide {
+        float: left;
+        height: 510px;
+        width: 728px;
+      }
+       
+      /* Add animation to the slides */
+      .slide-wrapper {
+         
+      /* Calculate the total width on the
+        basis of number of slides */
+        width: calc(728px * 4);
+       
+      /* Specify the animation with the
+        duration and speed */
+        animation: slide 15s ease infinite;
+      }
+      /* Define the animation
+for the slideshow */
+    @keyframes slide {
+   
+    /* Calculate the margin-left for
+      each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+     
+      40% {
+        margin-left: calc(-728px * 1);
+      }
+     
+      60% {
+        margin-left: calc(-728px * 2);
+      }
+     
+      80% {
+        margin-left: calc(-728px * 3);
+      }
+    }
+}
+
+@media (max-width:727px) {
+    #slideshow {
+        overflow: hidden;
+        height: 510px;
+        width: 375px;
+        margin: 0 auto;
+      
+      }
+       
+      /* Style each of the sides
+      with a fixed width and height */
+      .slide {
+        float: left;
+        height: 510px;
+        width: 375px;
+      }
+       
+      /* Add animation to the slides */
+      .slide-wrapper {
+         
+      /* Calculate the total width on the
+        basis of number of slides */
+        width: calc(375px * 4);
+       
+      /* Specify the animation with the
+        duration and speed */
+        animation: slide 15s ease infinite;
+      }
+      /* Define the animation
+    for the slideshow */
+    @keyframes slide {
+   
+    /* Calculate the margin-left for
+      each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+     
+      40% {
+        margin-left: calc(-375px * 1);
+      }
+     
+      60% {
+        margin-left: calc(-375px * 2);
+      }
+     
+      80% {
+        margin-left: calc(-375px * 3);
+      }
+    }
+}
+
+
+img {
+    width: 100%;
+}
+
+.intro h1 {
+    font-family: 'Bungee';
+    margin: 20px auto;
+    max-width: 800px;
+}
+p {
+    font-family: 'Raleway';
+    padding: 10px;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+
+.video {
+  text-align: center;
+  padding-bottom: 20px;
+}
